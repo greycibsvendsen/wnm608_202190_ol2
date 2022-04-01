@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    font-family:Century Gothic",Verdana,sans-serif";
+}
+
+.hero {
+    /* Sizing */
+    width: 100vw;
+    height: 100vh;
+    
+    /* Flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Text 1 */
+    text-align: center;
+    color: white;
+    
+    /* Background */
+    background-image: url('https://cdn.shopify.com/s/files/1/2721/1236/files/DSC02356-Edit-Edit-2_06380452-0a9c-4244-ad0e-6b924ea10303.jpg?v=1643201548&width=2640&height=&crop=center');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.hero h1 {
+    /* Text 2 */
+    font-size: 5em;
+    
+    /* Margins */
+    margin-top: 0;
+    margin-bottom: 0.em;
+}
+
+.hero .btn {
+      
+    display: block;
+    width: 300px;
+    
+  
+    padding: 1em;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+    /* Text 3*/
+     color: white; 
+    text-decoration: none;
+    font-size: 1em;
+    
+    /* Border styles */
+    border-radius: 50px;
+    
+    /* Background styles */
+    background-color:#D56756;
+}

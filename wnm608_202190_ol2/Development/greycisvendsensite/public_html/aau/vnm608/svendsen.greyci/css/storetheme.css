@@ -1,47 +1,61 @@
 :root {
 
-	
-	--color-white: #fff;
-	--color-main-light: #E7F1F1;
-  --color-main-medium: #2592c3;
+	--color-offwhite:  #f4f4f4;
 
-  --color-main: #F25E7A;
-  --color-main-medium: #F25E7A;
-  --color-main-dark: #F2F2F2;
-
-  	background-color: #DEEBEB;
+  --color-main: #208E8E;
+  --color-main-medium: #5A797D;
+  --color-main-dark: #D56756;
 
 }
-
-
 
 
 body {
-	background-color:var(--color-offwhite);
-	padding-bottom:4em;
+	background-color: #E7F1F1;
+	padding-bottom: 6em;
 
 }
 
-:root
-  --color-offwhite: #f4f4f4;
 
-
-body {
-	background-color:var(--color-offwhite);
-	padding-bottom:4em;
-	
-}
 
 .favorite label {
 	transition: all 0.3s;
-	display:inline-block ;
+	display:inline-block;
 	transform: scale(1.1);
-	color:var(--color-neutral-medium);
+	color:var(--color-main);
 
 }
 
 .favorite input:checked + label {
-	color: red;
-	transform: scale(1.5,1.5);
+	color:red;
+	transform:scale(1.5,1.5);
+
+	
 
 }
+
+@media (max-width: 800px) {
+	.container {
+	   padding-left:1em;
+	   padding-right:1em;
+
+	 }
+	 .navbar. h1 {
+		padding-left:0.5em;
+	}
+}
+	@media (max-width: 400px) {
+	    .navbar. display-flex {
+		  display: block;
+
+	}
+	.navbar .nav li {
+		line-height:2em;
+ 
+  }
+  .figure.product {
+  	border-radius: 0,5em;
+  	box-shadow:0 2px 5px rgba(0,0,0,0.1);
+  	overflow:hidden;
+  	
+
+  }
