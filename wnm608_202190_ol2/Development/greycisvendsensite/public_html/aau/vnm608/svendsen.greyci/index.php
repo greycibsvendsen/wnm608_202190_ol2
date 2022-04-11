@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Doggyshop</title>
+	<title>Doggyshop website</title>
 
 
 
@@ -31,11 +31,14 @@
     <div class="container" id=view window>
     <div class="view-window" style="background-image: url('https://www.nomnomnow.com/images/home/hero_pork_ingredients_big.jpg');"></div>
     </div>
+    
 
 
 
 
 
+
+      
 
 
 
