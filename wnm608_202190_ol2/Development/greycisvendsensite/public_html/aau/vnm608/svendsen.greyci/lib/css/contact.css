@@ -1,0 +1,43 @@
+/* contact form */
+
+ *{
+  margin: auto;
+  padding:0px;
+  place-items:center;
+
+  }
+
+  input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px; 
+  border: 2px solid #ccc;
+  border-radius: 16px;
+  box-sizing: border-box;
+  margin-top: 16px; 
+  margin-bottom: 16px;
+  resize: vertical 
+
+  }
+
+
+  input[type=submit] {
+  background-color: #D56756;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+
+  .input[type=submit]:hover {
+  background-color: #CD6151;
+}
+
+
+.container {
+  border-radius: 50px;
+  padding: 25px;
+  
+
+}

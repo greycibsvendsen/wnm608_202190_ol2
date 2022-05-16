@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+<?php 
+include_once"lib/php/functions.php"; 
+include_once"parts/templates.php"; 
+?><!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -48,6 +51,13 @@
         <li>Access to advice from feed and nutrition experts</li>
         </ol>
       </div>
+
+      <div class="container">
+         <h2>Latest Dog Food</h2>
+         <?php recommededCategory("vet food"); ?>
+          <h2>Latest Dog Food</h2>
+         <?php recommededCategory("dry food"); ?>
+
     
 
 
@@ -61,6 +71,6 @@
 
      <?php include "parts/footer.php";?>
 
-
+        </div>
 	</body>
 </html>
