@@ -7,8 +7,7 @@ greyci svendsen
 - https://greycibsvendsen.com/wnm608_202190_ol2/svendsen.greyci
 - https://greycibsvendsen.com/wnm608_202190_ol2/svendsen.greyci/styleguide
 - https://greycibsvendsen.com/wnm608_202190_ol2/svendsen.greyci/index.php
-- https://greycibsvendsen.com/wnm608_202190_ol2/svendsen.greyci/admin
-
+- http://greycibsvendsen.com/aau/vnm608/svendsen.greyci/admin/index.php
 ## Extra Links 
 - https://greycibsvendsen.com/wnm608_202190_ol2/svendsen.greyci/admin/users.php
 - https://greycibsvendsen.com/wnm608_202190_ol2/svendsen.greyci/notes
