@@ -11,7 +11,7 @@ include_once"parts/templates.php";
 
 	<?php include "parts/meta.php"; ?>
 </head>
-<body>
+<body class="flush">
  
 
 	<?php include "parts/navbar.php"; ?>
@@ -57,19 +57,6 @@ include_once"parts/templates.php";
          <?php recommededCategory("vet food"); ?>
           <h2>Latest Dog Food</h2>
          <?php recommededCategory("dry food"); ?>
-
-    
-
-
-
-
-
-
-      
-
-
-
-     <?php include "parts/footer.php";?>
 
         </div>
 	</body>

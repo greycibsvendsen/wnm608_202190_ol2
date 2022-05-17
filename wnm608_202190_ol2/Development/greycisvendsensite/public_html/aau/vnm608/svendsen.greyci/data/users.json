@@ -1,0 +1,38 @@
+[
+	{
+		"name":"Greyci Svendsen",
+		"type" :"Student",
+		"email": "glima4@art.edu",
+		"classes":[605,608,613]
+
+	},
+	{
+		"name":"Michelle Bing",
+		"type" :"Student",
+		"email": "michelle@art.edu",
+		"classes":[605,608,613]
+
+	},
+	{
+		"name":"Sofia Gellar",
+		"type" :"Student",
+		"email": "sofia@art.edu",
+		"classes":[605,608,613]
+
+	},
+	{
+		"name":"Patrick Nielsen",
+		"type" :"Studeent",
+		"email": "patrick@art.edu",
+		"classes":[605,608,613]
+
+	},
+	{
+		"name":"Nikki Buffay",
+		"type" :"Student",
+		"email": "nikki@art.edu",
+		"classes":[605,608,613]
+
+	}
+	
+]

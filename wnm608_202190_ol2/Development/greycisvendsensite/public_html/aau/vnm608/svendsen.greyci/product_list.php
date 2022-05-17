@@ -21,13 +21,17 @@
 
 
     <div class="container">
-       <div class="card soft">
+
 	      <h2>Product list</h2>
 
+         <div class="card dark">
          <div class="form-control">
-           <form class="hotdog light" id="product-search">
+           <form class="hotdog" id="product-search">
                 <input type="search" placeholder="Search Products">
+                </div>
+
                </form>
+
             </div>
            
            <div class="form-control">
@@ -59,7 +63,7 @@
             </div>
           </div>
        </div>
-   </div>
+
                         
 
             
