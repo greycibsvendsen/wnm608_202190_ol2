@@ -2,24 +2,23 @@
 
 .form-button {
 
-	padding: 1em 2em;
+	padding: 1.5em 1em;
     border-radius: 1.5em;
     border: none;
     cursor: pointer;
     text-align: center;
     color: white;
     background-color: var(--color-main-dark);
-    width: 150px;
+    width: 160px;
     margin-right: 100px;
-    margin-top: 20px;
-    cursor: pointer;
-
-
-    }
+    margin-top: 10px;
 
   
 
     }
+
+
+
 
   
 

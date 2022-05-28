@@ -18,9 +18,11 @@ resetCart();
 	  <div class="card soft">
 	    <h1>Thank you</h1>
 	    <h2>For your purchase</h2>
-	    <p><a href="product_list.php">Continue Shopping</a></p>
+	    <p><a class="productconfirmation-button" href="product_list.php">Continue Shopping</a></p>
+	     <img src="img/purchase.jpg" alt="Dogs" class="center w-75"/> 
 	    </div>
      </div>
 
+  
 </body>
 </html>

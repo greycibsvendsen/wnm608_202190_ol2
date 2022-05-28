@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: May 12, 2022 at 11:20 PM
+-- Generation Time: May 19, 2022 at 06:58 PM
 -- Server version: 5.7.37-cll-lve
 -- PHP Version: 7.3.32
 
@@ -35,7 +35,7 @@ CREATE TABLE `products` (
   `description` text NOT NULL,
   `price` decimal(10,2) NOT NULL,
   `category` varchar(32) NOT NULL,
-  `date_created` datetime NOT NULL,
+  `date_create` datetime NOT NULL,
   `date_modify` datetime NOT NULL,
   `product_id` int(11) NOT NULL,
   `thumbnail` varchar(128) NOT NULL,
@@ -46,7 +46,7 @@ CREATE TABLE `products` (
 -- Dumping data for table `products`
 --
 
-INSERT INTO `products` (`id`, `title`, `taste`, `description`, `price`, `category`, `date_created`, `date_modify`, `product_id`, `thumbnail`, `images`) VALUES
+INSERT INTO `products` (`id`, `title`, `taste`, `description`, `price`, `category`, `date_create`, `date_modify`, `product_id`, `thumbnail`, `images`) VALUES
 (1, 'vet food', 'Chicken', 'Healthy and fresh food for your dog.Healthy and fresh food for your dog. We have a number of different feed mixtures, all of which consist of high-quality natural raw materials. Read more about the food here.', 25.00, 'Dogfood', '2022-04-24 11:47:18', '2022-04-24 11:47:18', 1, 'dog_vetfood_thumb07.png', 'dog_vetfood01.jpeg,dog_vetfood01.jpeg,dog_vetfood03.jpeg,dog_vetfood04.jpeg,dog_vetfood05.jpeg,dog_vetfood06.jpeg'),
 (2, 'Vet food', 'Beef', 'Healthy and fresh food for your dog.Healthy and fresh food for your dog. We have a number of different feed mixtures, all of which consist of high-quality natural raw materials. Read more about the food here.', 25.00, 'Dogfood', '2022-04-24 11:54:23', '2022-04-24 11:54:23', 2, 'dog_vetfood_thumb08.png', 'dog_vetfood_thumb07.png,dog_vetfood01.jpeg,dog_vetfood01.jpeg,dog_vetfood03.jpeg,dog_vetfood04.jpeg,dog_vetfood05.jpeg,dog_vetfood06.jpeg'),
 (3, 'Vet food', 'Fish', 'Healthy and fresh food for your dog.Healthy and fresh food for your dog. We have a number of different feed mixtures, all of which consist of high-quality natural raw materials. Read more about the food here.', 25.00, 'Dogfood', '2022-04-24 11:54:23', '2022-04-24 11:54:23', 3, 'dog_vetfood_thumb07.png', 'dog_vetfood_thumb07.png,dog_vetfood01.jpeg,dog_vetfood01.jpeg,dog_vetfood03.jpeg,dog_vetfood04.jpeg,dog_vetfood05.jpeg,dog_vetfood06.jpeg'),

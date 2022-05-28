@@ -4,9 +4,7 @@ include_once "../lib/php/functions.php";
 
 $output = [];
 
-$data = json_decode(file_get_contens("php://input"));
-
-//print_p($data);
+$data = json_decode(file_get_contents("php://input"));
 
 switch ($data->type) {
 	case "products_all":
@@ -24,7 +22,7 @@ switch ($data->type) {
 	  	  `description` LIKE '%$data->search%' OR
 	  	  `category` LIKE '%$data->search%' 
 	  	ORDER BY `date_create` DESC 
-	  	LIMIT 12")
+	  	LIMIT 12");
 	  break;
 
 	case "product_filter":
@@ -32,13 +30,13 @@ switch ($data->type) {
 	  	FROM `products`
 	  	WHERE `$data->column` LIKE '$data->value'
 	  	ORDER BY `date_create` DESC 
-	  	LIMIT 12")
+	  	LIMIT 12");
 	  break;
 
 	case "product_sort":
 	$output['result'] = makeQuery(makeConn(),"SELECT * 
 	  	FROM `products`
-	  	ORDER BY `$date->column` $data->dir 
+	  	ORDER BY `$data->column` $data->dir 
 	  	LIMIT 12");
 	  break;
 
@@ -46,7 +44,7 @@ switch ($data->type) {
 
 }
 
-echo json_encode($output,JSON_NUMBERIC_CHECK/JSON_UNESCAPED_UNICODE);
+echo json_encode($output,JSON_NUMERIC_CHECK/JSON_UNESCAPED_UNICODE);
 
 
 

@@ -10,7 +10,7 @@
       <link rel="stylesheet" href="lib/css/about.css">
       <link rel="stylesheet" href="lib/css/product_list.css">
 
-      <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 
 

@@ -12,16 +12,14 @@
     <?php include "parts/navbar.php"; ?>
 
 
-
-<div class="loginbody">
+  
+    <div class="loginbody">
     <section class="login_in-form">
-     
-        
-        <form action="">
+    <form action="">
             
 <body>
 
-  <div class="main_div">
+    <div class="main_div">
     <div class="title">Login</div>
     <div class="social_icons">
       <a href="#"><i class="facebook-"></i> <span>Facebook</span></a>
@@ -64,6 +62,6 @@
 
 
   </div>
-  
+    
 </body>
 </html>

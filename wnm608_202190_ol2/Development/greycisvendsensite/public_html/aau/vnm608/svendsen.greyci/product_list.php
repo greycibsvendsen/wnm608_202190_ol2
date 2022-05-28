@@ -22,47 +22,45 @@
 
     <div class="container">
 
-	      <h2>Product list</h2>
+
+	      <h2>Product List</h2>
+      
 
          <div class="card dark">
          <div class="form-control">
-           <form class="hotdog" id="product-search">
+           <form class="hotdog dark" id="product-search">
                 <input type="search" placeholder="Search Products">
                 </div>
-
-               </form>
-
-            </div>
-           
-           <div class="form-control">
+              </form>
+           </div>
+            <div class="form-control">
             <div class="card soft">
-            <div class="display-flex">
+            <div class="display-flex flex-wrap">
             <div class="flex-stretch display-flex">
             <div class="flex-none">
             <button data-filter="category" data-value="" type="button" class="form-button">All</button>
             </div>
             
             <div class="flex-none">
-            <button data-filter="category" data-value="dry food" type="button" class="form-button">Dry food</button>
+            <button data-filter="title" data-value="Dryfood" type="button" class="form-button">Dry Food</button>
             </div>
             
             <div class="flex-none">
-            <button data-filter="category" data-value="vet food" type="button" class="form-button">Vet food</button>
+            <button data-filter="title" data-value="Vetfood" type="button" class="form-button">Vet Food</button>
               </div>
               </div>  
                
             <div class="flex-none">
             <div class="form-select">
             <select class="js-sort">
-            <option value="1">Newest </option>
-             <option value="2">Oldest</option>
-             <option value="3">Least Expensive</option>
-             <option value="4">Most Expensive</option>
+             <option value="1">Least Expensive</option>
+             <option value="2">Most Expensive</option>
               </select>
                 </div>
             </div>
           </div>
-       </div>
+      </div>
+      
 
                         
 
@@ -70,6 +68,6 @@
          <div class='productlist grid gap'></div>
     </div>
    
-
+  
 </body>
 </html>

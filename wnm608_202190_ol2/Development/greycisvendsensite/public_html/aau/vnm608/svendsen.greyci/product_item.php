@@ -1,19 +1,17 @@
 <?php
             
 include_once "lib/php/functions.php";
-include_once"parts/templates.php"; 
+include_once "parts/templates.php";
 
 $product = makeQuery(makeConn(), "SELECT * FROM `products` WHERE `id`=".$_GET['id'])[0];
 
 $images = explode(",", $product->images);
-$$
+
 $image_elements = array_reduce($images,function($r,$o){
     return $r."<img src='img/$o'>";
 }); 
 
-// print_p($_SESSION);
-
-?> <!DOCTYPE html>
+?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -24,7 +22,6 @@ $image_elements = array_reduce($images,function($r,$o){
     <?php include "parts/navbar.php"; ?>
 
     <script src="js/product_thumbs.js"></script>
-    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
     
 </head>
 <body>
@@ -53,8 +50,10 @@ $image_elements = array_reduce($images,function($r,$o){
                         <div class="product-price">&dollar;<?= $product->price ?></div>
                     </div>
 
-                    <div class="card-selection">
+                    <div class="card-section">
                         <div class="form-control">
+                            <p>DETAILS: Developed by veterinarians and nutritionists Our recipes are based on the latest research on dog health and nutrition.</p><p>100% natural ingredients. Our feed contains meat or fish mixed with, for example, vegetables, eggs, rice or potatoes</p>
+                            <br/>
                         <label for="product-amount" class="form-label">Amount</label>
                         <div class="form-select" >
                             <select id="product-amount" name="product-amount">
@@ -83,16 +82,16 @@ $image_elements = array_reduce($images,function($r,$o){
         </div>
 
         <div class="card soft dark">
-            <p><?= $product->description ?></p>
+        <p><?= $product->description ?></p>
         </div>
         <h2>Recommended Products</h2>
         <?php
-           recommendedSimilar($product->category,$product->id);
-           ?>
+        recommendedSimilar($product->category,$product->id);
+        ?>
 
     </div>
          
-
+  
 </body>
 </html>
 

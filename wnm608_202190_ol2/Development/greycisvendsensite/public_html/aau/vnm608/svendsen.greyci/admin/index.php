@@ -1,10 +1,6 @@
-
-
 <?php
 
     include "../lib/php/functions.php";
- 
-
 
 $empty_product = (object)[
 
@@ -97,7 +93,7 @@ return $r.<<<HTML
 <div class="card soft">
 <div class="display-flex">
 <div class="flex-none images-thumbs"><img src='../img/$o->thumbnail'></div>
-<div class="flex-stretch" style="padding:1em">$o->title</div>
+<div class="flex-stretch" style="padding:1em">$o->title with different tast</div>
 <div class="flex-none"><a href="{$_SERVER['PHP_SELF']}?id=$o->id" class="form-button">Edit</a></div>
 </div>
 </div>
@@ -182,12 +178,13 @@ function showProductPage($o){
         </div>
         "; 
     
-    $delete = $id == "new" ? "" : "<a href='{$_SERVER['PHP_SELF']}?id=$id&action=delete'>Delete</a>";
+    
+    $delete = $id == "new" ? "" : "<a class='bntag' href='{$_SERVER['PHP_SELF']}?id=$id&action=delete'>Delete</a>";
     
     echo <<<HTML
     <div class="card soft">
     <nav class="display-flex">
-        <div class="flex-stretch"><a href="{$_SERVER['PHP_SELF']}">&#60; Back</a></div>
+        <div class="flex-stretch"><a class='bntag' href="{$_SERVER['PHP_SELF']}">&#60; Back</a></div>
         <div class="flex-none">$delete</div>
     </nav>
     </div>
@@ -204,21 +201,21 @@ function showProductPage($o){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
- <link rel="stylesheet"href="../lib/css/styleguide.css">
-    <link rel="stylesheet"href="../lib/css/gridsystem.css">
+<link rel="stylesheet"href="../lib/css/styleguide.css">
+<link rel="stylesheet"href="../lib/css/gridsystem.css">
 </head>
 <body>
 
   <header class="navbar">
             <div class="container display-flex">
                 <div class="flex-none">
-                    <h1>ADMIN</h1>
+                    <h1>Admin</h1>
                 </div>
                 <div class="flex-stretch"></div>
                 <nav class="nav nav-flex flex-none">
                     <ul>
-                        <li><a href="<?= $_SERVER['PHP_SELF'] ?>">PRODUCT LIST</a></li>
-                        <li><a href="<?= $_SERVER['PHP_SELF'] ?>?id=new">ADD NEW PRODUCT</a></li>
+                        <li><a href="<?= $_SERVER['PHP_SELF'] ?>">Product List</a></li>
+                        <li><a href="<?= $_SERVER['PHP_SELF'] ?>?id=new">Add New Product</a></li>
                     </ul>
                 </nav>
             </div>
@@ -253,6 +250,4 @@ function showProductPage($o){
  
 
 </div>
-
-       
 </body>

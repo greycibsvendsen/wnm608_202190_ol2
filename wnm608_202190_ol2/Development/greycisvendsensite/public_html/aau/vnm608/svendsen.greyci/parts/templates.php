@@ -7,13 +7,12 @@ function productListTemplate($r,$o) {
 	<a class="col-xs-12 col-md-4" href="product_item.php?id=$o->id">
 			<figure class="figure product display-flex flex-column">
 			<div class = "flex-stretch">
-				<img src = "img/$o->thumbnail" / >
+				<img src = "img/$o->thumbnail"/>
 				</div>
 				<figcaption class= "flex-none">
 				
-						<div>$o->name</div>
+						<div>$o->title</div>
 						<div>&dollar;$o->price</div>
-				
 				</figcaption>
 			</figure>
 	</a>
@@ -51,7 +50,7 @@ return $r.<<<HTML
 			<img src="img/$o->thumbnail">
 		</div>
 		<div class="flex-stretch">
-			<strong>$o->name</strong>
+			<strong>$o->title</strong>
 			
 <form action="cart_actions.php?action=delete-cart-item" method="post">
 <input type="hidden" name="id" value="$o->id">
@@ -99,41 +98,41 @@ return <<<HTML
 						<div class="flex-stretch"><strong>Total</strong></div>
 						<div class="flex-none">&dollar;$taxedfixed</div>
 					</div>
-					<div class="card-section">
-						<a href="product_checkout.php" class="form-button">Checkout</a>
-					</div>
+                     <div class="card-section">
+                     <a href="product_checkout.php" class="action-button">Checkout</a>
+                    </div>
 HTML;
 }
 
 
 
-
-function recommendedProducts($a) {
-$products = array_reduce($a,'productListTemplate');
-echo<<<HTML
-<div class="grid gap productlist">$products</div>
-HTML;
+	function recommendedProducts($a) {
+	$products = array_reduce($a,'productListTemplate');
+	echo <<<HTML
+	<div class="productlist grid gap">$products</div>
+	HTML;
 }
 
-function recommendedAnything($limit=3){
-	$result = makeQuery(makeConn(),"SELECT * FROM `products` ORDER BY rand() LIMIT $limit");
-	recommendedProducts($result);
+	function recommendedAnything($limit=3) {
+	    $result = makeQuery(makeConn(),"SELECT * FROM `products` ORDER BY rand() DESC LIMIT $limit");
+	    recommendedProducts($result);
 }
 
-
-function recommendedCategory($cat,$limit=3){
-	$result = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `category`='$cat' ORDER BY `date_create` DESC LIMIT $limit");
-	recommendedProducts($result);
-}
-
-function recommendedSimilar($cat,$id=0,$limit=3) {
-    $result = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `category`='$cat' AND `id`<>$id ORDER BY rand() LIMIT $limit");
-    recommendedProducts($result);
+	function recommendedCategory($cat,$limit=3) {
+	    $result = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `category`='$cat' ORDER BY `date_create` DESC LIMIT $limit");
+	    recommendedProducts($result);
 }
 
 
+	function recommendedTitle($cat,$limit=3) {
+	    $result = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `title`='$cat' ORDER BY `date_create` DESC LIMIT $limit");
+	    recommendedProducts($result);
+}
 
-
+	function recommendedSimilar($cat,$id=0,$limit=3) {
+	    $result = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `category`='$cat' AND `id`<>$id ORDER BY rand() LIMIT $limit");
+	    recommendedProducts($result);
+}
 
 
 

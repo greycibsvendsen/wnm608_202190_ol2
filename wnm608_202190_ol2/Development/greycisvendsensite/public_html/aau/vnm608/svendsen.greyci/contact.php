@@ -16,6 +16,11 @@
 	<div class="container intro">
         <h1 style="text-align: center;">Contact us</h1> 
         <p style="text-align: center;">Our company wants to help dog owners get their dogs a better life by giving them access to knowledge of the dog world by providing healthier foods and better toys so the dog gets the best of the best. If you need personal help, send us a message via the contact form below.
+
+        <br/>
+           <br/>
+           <br/>
+          <img src="img/contact_us.jpg" alt="Contact us dog" class="center"/> 
         </p>
     </div>
 
